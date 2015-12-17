@@ -1,0 +1,9 @@
+service replayme
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = replayme
+        wait            = no
+        server          = /home/replayme/replayme
+}
+

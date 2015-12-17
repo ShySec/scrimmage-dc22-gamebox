@@ -1,0 +1,8 @@
+service babyecho
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = babyecho
+        wait            = no
+        server          = /home/babyecho/babyecho
+}

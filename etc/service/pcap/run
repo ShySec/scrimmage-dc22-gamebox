@@ -1,0 +1,13 @@
+#!/bin/sh
+
+umask 377
+/usr/bin/sudo \
+    /usr/sbin/tcpdump \
+    -Z nobody \
+    -i any \
+    -w "/tmp/tcpdump-%s.pcap" \
+    -z "/etc/service/pcap/rotate" \
+    -W 99999 \
+    -G $((5*60)) \
+    -s0 \
+    "not tcp port 22"

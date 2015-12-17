@@ -1,0 +1,9 @@
+service patchme
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = patchme
+        wait            = no
+        server          = /home/patchme/patchme
+}
+

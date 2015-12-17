@@ -1,0 +1,9 @@
+service wdub
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = wdub
+        wait            = no
+        server          = /home/wdub/wdub
+}
+

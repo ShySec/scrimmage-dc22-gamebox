@@ -1,0 +1,8 @@
+service bookworm
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = bookworm
+        wait            = no
+        server          = /home/bookworm/bookworm
+}

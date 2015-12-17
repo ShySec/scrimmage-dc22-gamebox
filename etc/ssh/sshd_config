@@ -1,0 +1,32 @@
+AllowUsers                      root ctf
+Protocol                        2
+Port                            22
+PubkeyAuthentication            yes
+
+Ciphers                         aes256-ctr
+
+UsePAM                          no
+PermitRootLogin                 yes
+PasswordAuthentication          no
+PermitEmptyPasswords            no
+KerberosAuthentication          no
+GSSAPIAuthentication            no
+ChallengeResponseAuthentication no
+HostbasedAuthentication         no
+
+X11Forwarding                   yes
+PermitTunnel                    no
+AllowTcpForwarding              yes
+
+UsePrivilegeSeparation          sandbox
+UseDNS                          no
+StrictModes                     no
+Compression                     delayed
+
+Subsystem      sftp             /usr/lib/openssh/sftp-server
+
+AcceptEnv LANG LC_*
+AcceptEnv TZ
+AcceptEnv COLORFGBG
+AcceptEnv WINDOW
+AcceptEnv TMUX

@@ -1,0 +1,8 @@
+service lonetuna_v1
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = lonetuna_v1
+        wait            = no
+        server          = /home/lonetuna_v1/lonetuna_v1
+}

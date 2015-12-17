@@ -1,0 +1,8 @@
+service trouver
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = trouver
+        wait            = no
+        server          = /home/trouver/trouver
+}

@@ -1,0 +1,8 @@
+service atmail
+{
+        socket_type     = stream
+        protocol        = tcp
+        user            = atmail
+        wait            = no
+        server          = /home/atmail/atmail
+}
