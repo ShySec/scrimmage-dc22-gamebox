@@ -12,7 +12,7 @@ This server is designed for easy install on Ubuntu 14.04 x64 using the following
 	# install scrimmage config
 	cd /
 	git init
-	git remote add origin git@github.com:samuraictf/scrimmage-dc22-gamebox.git
+	git remote add origin git@github.com:shysec/scrimmage-dc22-gamebox.git
 	git fetch --quiet origin master
 	git checkout -f -t origin/master
 	/root/setup.sh
